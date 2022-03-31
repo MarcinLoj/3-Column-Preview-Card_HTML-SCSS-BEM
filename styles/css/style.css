@@ -50,6 +50,10 @@ html {
   opacity: 0.6;
 }
 
+.article__img {
+  max-width: 48px;
+}
+
 .btn {
   font-family: 'Lexend Deca', sans-serif;
   font-size: 0.625rem;
@@ -58,10 +62,6 @@ html {
   margin-top: 64px;
   padding: 8px 24px;
   border: 2px solid #fff;
-}
-
-.article__img {
-  max-width: 48px;
 }
 
 @media (max-width: 768px) {

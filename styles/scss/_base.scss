@@ -22,21 +22,25 @@ html {
     padding: 32px;
     max-width: 150px;
     max-height: 400px;
+
+    &__title {
+        @include font-big-shoulders;
+        margin-top: 16px;
+        font-weight: $font-weight-lg;
+        text-transform: uppercase;
+        font-size: $font-size-vlg; 
+    }
+    &__paragraph {
+        line-height: 20px;
+        margin-top: 16px;
+        font-size: $font-size-sm;
+        opacity: 0.6;
+    }
+    &__img {
+        max-width: 48px;
+    }
 }
-.article__title {
-    @include font-big-shoulders;
-    margin-top: 16px;
-    font-weight: $font-weight-lg;
-    text-transform: uppercase;
-    font-size: $font-size-vlg;
-    
-}
-.article__paragraph {
-    line-height: 20px;
-    margin-top: 16px;
-    font-size: $font-size-sm;
-    opacity: 0.6;
-}
+
 .btn {
     @include font-lexend-deca;
     font-size: $font-size-vsm;
@@ -45,9 +49,6 @@ html {
     margin-top: 64px;
     padding: 8px 24px;
     border: 2px solid $white;
-}
-.article__img {
-    max-width: 48px;
 }
 
 @media (max-width: 768px) {
