@@ -1,0 +1,73 @@
+@use "colors";
+@use "fonts";
+@use "values";
+
+@mixin hover-state($color) {
+    &:hover {
+        background-color: $color;
+        color: $white;
+    }
+}
+
+@mixin border-corner-radius($posX, $posY) {
+    border-#{$posX}-#{$posY}-radius: 8px;
+}
+
+.sedan--bg-color {
+    background-color: $bright-orange;
+}
+.sedan--color {
+    color: $bright-orange;
+}
+.sedan--btn-hover {
+    @include hover-state($bright-orange);
+}
+
+.suv--bg-color {
+    background-color: $dark-cyan;
+}
+.suv--color {
+    color: $dark-cyan;
+}
+.suv--btn-hover {
+    @include hover-state($dark-cyan);
+}
+
+.luxury--bg-color {
+    background-color: $very-dark-cyan;
+}
+.luxury--color {
+    color: $very-dark-cyan;
+}
+.luxury--btn-hover {
+    @include hover-state($very-dark-cyan);
+}
+
+@media (min-width: 768px) {
+    .border--top-left-radius-desktop {
+        @include border-corner-radius(top,left)
+    }
+    .border--top-right-radius-desktop {
+        @include border-corner-radius(top,right)
+    }
+    .border--bottom-left-radius-desktop {
+        @include border-corner-radius(bottom,left)
+    }
+    .border--bottom-right-radius-desktop {
+        @include border-corner-radius(bottom,right)
+    }
+}
+@media (max-width: 768px) {
+    .border--top-left-radius-mobile {
+        @include border-corner-radius(top,left)
+    }
+    .border--top-right-radius-mobile {
+        @include border-corner-radius(top,right)
+    }
+    .border--bottom-left-radius-mobile {
+        @include border-corner-radius(bottom,left)
+    }
+    .border--bottom-right-radius-mobile {
+        @include border-corner-radius(bottom,right)
+    }
+}

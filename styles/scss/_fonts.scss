@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Red+Hat+Display:wght@900&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,900;1,400&display=swap');
+
+@mixin font-lexend-deca {
+    font-family: 'Lexend Deca', sans-serif;
+}
+@mixin font-big-shoulders {
+    font-family: 'Big Shoulders Display', cursive;
+}
+@mixin font-red-hat-display {
+    font-family: 'Red Hat Display', sans-serif;
+}
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin font-roboto-condensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
